@@ -7,9 +7,11 @@ export default ({ children }) => {
     <main
       style={{
         width: "90vw",
+        height: "90vh",
+        fontSize: "1rem"
       }}
     >
-      <div>{children}</div>
+      <div className="w-100 h-100 d-flex">{children}</div>
     </main>
   );
 };
