@@ -11,20 +11,27 @@ export default class MarginAuto extends Component {
   }
 
   onClick = () => {
-    let nextValue = this.state.current === 3 ? 0 : this.state.current+1;
+    let nextValue = this.state.current === 3 ? 0 : this.state.current + 1;
     this.setState({ current: nextValue });
   };
 
   render() {
     return (
-      <button
-        onClick={this.onClick}
-        className={`d-inline ${this.state.margins[this.state.current]}`}
-      >
-        <p className="m-0">{`🦆🦆🦆`}</p>
-        <p className="m-0">{`🦆🦆🦆`}</p>
-        <p className="m-0">{`🦆🦆🦆`}</p>
-      </button>
+      <React.Fragment>
+        <section className="container">
+          <div className="row mb-2">Posición: {this.state.current}</div>
+          <div className="row h-75">
+            <button
+              onClick={this.onClick}
+              className={` ${this.state.margins[this.state.current]}`}
+            >
+              <p className="m-0">{`🦆🦆🦆`}</p>
+              <p className="m-0">{`🦆🦆🦆`}</p>
+              <p className="m-0">{`🦆🦆🦆`}</p>
+            </button>
+          </div>
+        </section>
+      </React.Fragment>
     );
   }
 }
