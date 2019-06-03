@@ -1,16 +1,9 @@
-import React, { Component } from "react";
 import { Appear } from "@mdx-deck/components";
 export { code as theme } from "@mdx-deck/themes";
 import "./node_modules/bootstrap/dist/css/bootstrap.min.css";
 import FlexLayout from "./src/Layouts/FlexLayout";
 
-import {
-  Invert,
-  Split,
-  SplitRight,
-  Horizontal,
-  FullScreenCode
-} from "@mdx-deck/layouts";
+import { SplitRight, Split, FullScreenCode } from "@mdx-deck/layouts";
 
 <SplitRight>
 
@@ -69,25 +62,35 @@ import {
 
 # Formacion Previa
 
-- Grado Medio:
-
-## Titulado en Sistemas Microinformáticos y redes
-
-- Formación autodidacta
-
-## Lecturas varias, cursillos online, bases de Python.
+<ul>
+  <li className="h3">
+    {" "}
+    Grado Medio:
+    <p className="h4">Titulado en Sistemas Microinformáticos y redes</p>
+  </li>
+  <li className="h3">
+    {" "}
+    Formación autodidacta
+    <p className="h4">Lecturas varias, cursillos online, bases de Python...</p>
+  </li>
+</ul>
 
 ---
 
-# Formación en las aulas
 
-Conocimientos más desempeñados
-
-- Programación básica en Java
-- Manejo de BB.DD
-- Desarrollo de interfaces y lenguajes de marcas
-- Desarrollo web
-- Analisis y gestión de proyectos
+<FlexLayout column>
+<div>
+  <h2>Formación en las aulas</h2>
+  <h3 className="text-center">Conocimientos más desempeñados</h3>
+</div>
+<ul>
+  <li className="h4">Programación básica en Java</li>
+  <li className="h4">Manejo de BB.DD</li>
+  <li className="h4">Desarrollo de interfaces y lenguajes de marcas</li>
+  <li className="h4">Desarrollo web</li>
+  <li className="h4">Analisis y gestión de proyectos</li>
+</ul>
+</FlexLayout>
 
 ---
 
@@ -99,13 +102,14 @@ Conocimientos más desempeñados
 
 ---
 
-<SplitRight>
-
-# Sobre la empresa.
+<Split>
 
 ![](/src/images/logos.jpg)
 
-</SplitRight>
+# Sobre mi empresa y sus relaciones:
+# AgileDevers, Coddde, LenioLabs.
+
+</Split>
 
 ---
 
@@ -155,27 +159,27 @@ Conocimientos más desempeñados
 
 # Comienzo de las prácticas
 
-### Malas noticias: De Back-end, a front-end.
+1. Malas noticias: De Back-end, a front-end.
 
-## Empieza el periodo de formación.
+2. Empieza el periodo de formación.
 
 ---
-
+## Con el cambio, toca repasar:
 # Contenido visto durante las prácticas
 
-<ul>
-  <li className="h3">
+<ul className="mt-3 pt-3">
+  <li className="h3 my-3">
     Bases de Tecnologías web actuales:
     <p className="h5">HTML5, CSS3, SASS, librerías y metodologías de de CSS.</p>
   </li>
-  <li className="h3">
+  <li className="h3 my-3">
     Programación basada en Javascript actual:
     <p className="h5">Repaso de bases, ES6, errores comunes, "Gotchas"</p>
     <p className="h5">"Event loop" de Javascript, motor V8</p>
     <p className="h5">Promesas y asincronía en Javascript</p>
     <p className="h5">Funcionamiento de Node y npm</p>
   </li>
-  <li className="h3">
+  <li className="h3 my-3">
     React.js
     <p className="h5">Bases y teoría</p>
     <p className="h5">Tipos de componentes: props y state</p>
@@ -184,7 +188,7 @@ Conocimientos más desempeñados
     </p>
     <p className="h5">Uso básico y práctico de React con JSX</p>
   </li>
-  <li className="h3">
+  <li className="h3 my-3">
     Librerías adicionales a React,js
     <p className="h5">Redux, React-redux, React-router Etc...</p>
   </li>
@@ -194,7 +198,7 @@ Conocimientos más desempeñados
 
 import MarginAuto from "./src/Components/MarginAutospan";
 
-<div> Ejemplo básico de manejo del State </div>
+<div> Ejemplo básico de React y manejo del State </div>
 <FlexLayout>
   
   <MarginAuto />
@@ -203,7 +207,16 @@ import MarginAuto from "./src/Components/MarginAutospan";
 
 ---
 
-# Rutina y formato
+<div className="container">
+  <picture>
+    <img className="" src="./src/images/ejemplo2.PNG" />
+  </picture>
+</div>
+
+
+---
+
+# Rutina de la formación y formato de las presentaciones
 
 <ol>
   <Appear>
@@ -217,7 +230,7 @@ import MarginAuto from "./src/Components/MarginAutospan";
 
 ---
 
-# Ejemplo
+# Diapositiva de ejemplo
 
 <div className="container">
   <picture>
@@ -233,7 +246,7 @@ import MarginAuto from "./src/Components/MarginAutospan";
 
 # El primer proyecto:
 
-### Caracteristicas del proyecto
+## Caracteristicas del proyecto
 
 - Antiguo proyecto hecho en Angular
 - Poco a poco, obsoleto a nivel tecnológico.
@@ -245,27 +258,24 @@ import MarginAuto from "./src/Components/MarginAutospan";
 # Primeros retos, compenzamos el dessarrollo: Primeras tareas
 
 <ol className="container">
-  <li className="h3">
-    Coger costumbre
-  </li>
+  <li className="h3">Coger costumbre con el entorno de desarrollo.</li>
+  <li className="h3">Analisis previo del proyecto</li>
   <li className="h3">
     Reconocer todos los componentes importantes y reutilizables{" "}
     <span>(Con analisis previo o anotaciones)</span>
   </li>
   <li className="h3">
     <span>
-      Elaboración de componentes atómicos de rpueba para su uso posterior en componentes
-      de página
+      Elaboración de componentes atómicos de rpueba para su uso posterior en
+      componentes de página
     </span>
   </li>
   <span className="h3">
     (Manejo de componentes como piezas de puzzles en componentes de página)
   </span>
   <li className="h3">
-      Instauración de manejo y guardado del repositorio de código. 
-    <span>
-    Basados en GitLab y GitKraken.
-    </span>
+    Instauración de manejo y guardado del repositorio de código.
+    <span>Basados en GitLab y GitKraken.</span>
   </li>
 </ol>
 

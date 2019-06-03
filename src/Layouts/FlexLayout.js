@@ -1,8 +1,8 @@
 // example Layout.js
 import React from "react";
 
-export default ({ children }) => {
-  console.log(this);
+export default ({ children, column }) => {
+  console.log(column);
   return (
     <main
       style={{
@@ -11,7 +11,7 @@ export default ({ children }) => {
         fontSize: "1rem"
       }}
     >
-      <div className="w-100 h-100 d-flex">{children}</div>
+      <div className={`w-100 h-100 d-flex ${column ? 'flex-column':''}`}>{children}</div>
     </main>
   );
 };
