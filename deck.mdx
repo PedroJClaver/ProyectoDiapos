@@ -45,7 +45,7 @@ import { SplitRight, Split, FullScreenCode } from "@mdx-deck/layouts";
 
 # Sobre mí
 
-<ul>
+<ul className="mt-4 py-4">
   <Appear>
     <li className="h3"> Todo empezó gustandome la informática </li>
     <li className="h3">
@@ -62,7 +62,7 @@ import { SplitRight, Split, FullScreenCode } from "@mdx-deck/layouts";
 
 # Formacion Previa
 
-<ul>
+<ul className="mt-4 py-4">
   <li className="h3">
     {" "}
     Grado Medio:
@@ -77,19 +77,18 @@ import { SplitRight, Split, FullScreenCode } from "@mdx-deck/layouts";
 
 ---
 
-
 <FlexLayout column>
-<div>
-  <h2>Formación en las aulas</h2>
-  <h3 className="text-center">Conocimientos más desempeñados</h3>
-</div>
-<ul>
-  <li className="h4">Programación básica en Java</li>
-  <li className="h4">Manejo de BB.DD</li>
-  <li className="h4">Desarrollo de interfaces y lenguajes de marcas</li>
-  <li className="h4">Desarrollo web</li>
-  <li className="h4">Analisis y gestión de proyectos</li>
-</ul>
+  <div>
+    <h2>Formación en las aulas</h2>
+    <h3 className="text-center">Conocimientos más desempeñados</h3>
+  </div>
+  <ul className="mt-4 py-4">
+    <li className="h4">Programación básica en Java</li>
+    <li className="h4">Manejo de BB.DD</li>
+    <li className="h4">Desarrollo de interfaces y lenguajes de marcas</li>
+    <li className="h4">Desarrollo web</li>
+    <li className="h4">Analisis y gestión de proyectos</li>
+  </ul>
 </FlexLayout>
 
 ---
@@ -107,6 +106,7 @@ import { SplitRight, Split, FullScreenCode } from "@mdx-deck/layouts";
 ![](/src/images/logos.jpg)
 
 # Sobre mi empresa y sus relaciones:
+
 # AgileDevers, Coddde, LenioLabs.
 
 </Split>
@@ -115,7 +115,7 @@ import { SplitRight, Split, FullScreenCode } from "@mdx-deck/layouts";
 
 # La "historia" de AgileDevers
 
-<ul>
+<ul className="mt-4 py-4">
   <Appear>
     <li>Nacida en 2012, Madrid</li>
     <li>Fundada por Fabio Sanvido, Jesus García y Iago Rodriguez</li>
@@ -132,21 +132,21 @@ import { SplitRight, Split, FullScreenCode } from "@mdx-deck/layouts";
 
 # Sobre la actividad en AgileDevers
 
-<ul className="mt-2 p-2">
+<ul className="m-2 p-2">
   <Appear>
-    <li className="h2">
+    <li className="m-2 mx-4 h2">
       {" "}
       Empresa dedicada al desarrollo y mantenimiento de aplicaciones.
     </li>
-    <li className="h2">
+    <li className="m-2 mx-4 h2">
       {" "}
       Proporcionaba estos servicios a start-ups y otras empresas.
     </li>
-    <li className="h2">
+    <li className="m-2 mx-4 h2">
       {" "}
       Antes se centraban en aplicaciones basadas en Javascript y Ruby on Rails
     </li>
-    <li className="h2">
+    <li className="m-2 mx-4 h2">
       {" "}
       Actualmente, se están ampliando a más cosas, como Node.js y React.js
     </li>
@@ -156,15 +156,28 @@ import { SplitRight, Split, FullScreenCode } from "@mdx-deck/layouts";
 </section>
 
 ---
+# A nivel personal
 
-# Comienzo de las prácticas
+Ya sea con compañeros del año pasado que también contrataron, gente que lleva allí un tiempo, o que están ahí desde que empezaron, parecen gente muy compentente y bastante agradables.
+Tanto a nivel personal como profesional, cualquiera con quien haya hablado, siempre ha tenido algo que aportar.
+  
+O incluso con la gente de Coddde y de Lenio trabajando al otro lado del mundo. Aunque se hace algo más complicado, son igual de cercanos siempre atentos a cualquier cosa por Slack.
+
+---
+
+<section>
+  <h2>Comienzo de las prácticas</h2>
 
 1. Malas noticias: De Back-end, a front-end.
 
 2. Empieza el periodo de formación.
 
+</section>
+
 ---
+
 ## Con el cambio, toca repasar:
+
 # Contenido visto durante las prácticas
 
 <ul className="mt-3 pt-3">
@@ -213,18 +226,23 @@ import MarginAuto from "./src/Components/MarginAutospan";
   </picture>
 </div>
 
-
 ---
 
 # Rutina de la formación y formato de las presentaciones
 
-<ol>
+<ol className="container">
   <Appear>
-    <li>Asignación de tareas y listado de temas a cubrir.</li>
-    <li>Investigación, estudio de la documentación, y pruebas.</li>
-    <li>Pruebas y aplicación de lo aprendido.</li>
-    <li>Maquetación de diapositivas y repaso de lo aprendido.*</li>
-    <li>Exposición, discusión, brainstorming y crítica.</li>
+    <li className="h3 mx-2">
+      Asignación de tareas y listado de temas a cubrir.
+    </li>
+    <li className="h3 mx-2">
+      Investigación, estudio de la documentación, y pruebas.
+    </li>
+    <li className="h3 mx-2">Pruebas y aplicación de lo aprendido.</li>
+    <li className="h3 mx-2">
+      Maquetación de diapositivas y repaso de lo aprendido.*
+    </li>
+    <li className="h3 mx-2">Exposición, discusión, brainstorming y crítica.</li>
   </Appear>
 </ol>
 
@@ -251,7 +269,7 @@ import MarginAuto from "./src/Components/MarginAutospan";
 - Antiguo proyecto hecho en Angular
 - Poco a poco, obsoleto a nivel tecnológico.
 - Funciones a impementar y mejorar
-- Replicar y mejorar
+- Revisar y mejorar
 
 ---
 
@@ -259,23 +277,21 @@ import MarginAuto from "./src/Components/MarginAutospan";
 
 <ol className="container">
   <li className="h3">Coger costumbre con el entorno de desarrollo.</li>
-  <li className="h3">Analisis previo del proyecto</li>
+  <li className="h3">Analisis previo del proyecto.</li>
   <li className="h3">
-    Reconocer todos los componentes importantes y reutilizables{" "}
-    <span>(Con analisis previo o anotaciones)</span>
+    Reconocer todos los componentes importantes y reutilizables
+    <span className="d-block">-(Con analisis previo o anotaciones)</span>
   </li>
   <li className="h3">
-    <span>
-      Elaboración de componentes atómicos de rpueba para su uso posterior en
-      componentes de página
+    Elaboración de componentes atómicos de prueba para su uso posterior en
+    componentes de página.
+    <span className="d-block">
+      -(Manejo de componentes como piezas de puzzles en componentes de página)
     </span>
   </li>
-  <span className="h3">
-    (Manejo de componentes como piezas de puzzles en componentes de página)
-  </span>
   <li className="h3">
     Instauración de manejo y guardado del repositorio de código.
-    <span>Basados en GitLab y GitKraken.</span>
+    <span className="d-block">Basados en GitLab y GitKraken.</span>
   </li>
 </ol>
 
@@ -283,48 +299,240 @@ import MarginAuto from "./src/Components/MarginAutospan";
 
 # Avanzando, cambios en la gestión.
 
----
-
-# Test Custom Layout
-
-<FlexLayout flow="row nowrap">
-  <div className="bg-success">Cobaya </div>
-  <div className="bg-warning">El nocillo </div>
-  <img src="./src/images/hamster-wheel.gif" />
-</FlexLayout>
-
----
-
-## ptata
-
----
-
-<ul>
-  <li>* I am another bullet list item</li>
+<ul className="mt-4 py-4 container">
   <Appear>
-    <li>* I am a bullet list item</li>
-    <li>* I am another bullet list item</li>
+    <li className="h3">
+      {" "}
+      Se estudió la productividad y se cambió la gestión del proyecto.
+    </li>
+    <li className="h3"> Pasamos de ser 4 a 2 personas en el proyecto.</li>
+    <li className="h3"> Se me encargó todo el front-end.</li>
+    <li className="h3"> Empezaron a darse Deadlines mensuales</li>
+    <li className="h3">
+      {" "}
+      Mi codigo era revisado cada vez que terminabamos unas implementaciones.
+    </li>
   </Appear>
 </ul>
 
 ---
 
-# SLIDE 2 - HEADERS
+# Implementando más librerias, juntando partes del puzzle
 
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
+<ul className="mt-4 py-">
+  <Appear>
+    <li className="h3 mx-2">
+      Implementamos redux para ciertos componentes y páginas
+    </li>
+    <li className="h3 mx-2">Se comenzó la maquetación de las páginas</li>
+    <li className="h3 mx-2">
+      En la maquetación, implementamos los componentes previamente creados
+    </li>
+    <li className="h3 mx-2">
+      Se iban completando páginas para enseñar all cliente.
+    </li>
+    <li className="h3 mx-2">
+      Se iban completando páginas para enseñar all cliente.
+    </li>
+  </Appear>
+</ul>
 
 ---
 
-# SLIDE 3 - TABLE
+# Todavía más Redux
 
-| Fruit        | Weight | Cost   |
-| ------------ | ------ | ------ |
-| Strawberries | 16oz   | \$3.99 |
-| Blueberries  | 8oz    | \$2.99 |
-| Grapes       | 12oz   | \$3.75 |
+## En este caso de uso:
+
+<ul className="mt-4 py-4">
+  <Appear>
+    <li className="h3 mx-2">
+      Teniendo varios componentes entre páginas que necesitan compartir datos.{" "}
+    </li>
+    <li className="h3 mx-2">
+      Manejar el estado de distontos componentes, puede ser un lio.{" "}
+    </li>
+    <li className="h3 mx-2">
+      Puede ser sensible a la mutación si no se gestiona correctamente{" "}
+    </li>
+    <li className="h3 mx-2">
+      Tener bien atadas la asincronía, y todos los cambios de estado Redux
+    </li>
+  </Appear>
+</ul>
+
+---
+
+<div>
+  <div>
+    <p className="h3 mx-2">
+      {" "}
+      Para este fin, se crearon metodologías, como Flux.{" "}
+    </p>
+    <p className="h3 mx-2">
+      {" "}
+      Dichas metodologías se vieron necesarios fijarlos dentro de una librería:{" "}
+    </p>
+    <p className="h1">Así nace Redux y sus premisas:</p>
+  </div>
+  <ul>
+    <Appear>
+      <li> Estado global.</li>
+      <li> Es sólo lectura.</li>
+      <li> Cambios sólo con funciones puras.</li>
+    </Appear>
+  </ul>
+</div>
+
+---
+
+<span>
+  {" "}
+  Para más detalles o curiosidades acerca del tema, revisar <a href="https://www.youtube.com/watch?v=xsSnOQynTHs&ab_channel=ReactEurope">
+    {" "}
+    charla de Dan Abramox
+  </a>
+</span>
+
+---
+
+# Más en adelante:
+
+<ul className="mt-4 py-4">
+  <Appear>
+    <li className="h3">
+      Empezamos a tener un feedback directo de los clientes
+    </li>
+    <li className="h3">Nos adaptamos a la curva de aprendizaje de Redux</li>
+    <li className="h3">
+      Empezamos a dar mayor importancia a los boards de Gitlab para la
+      asignación de tareas
+    </li>
+    <li className="h3">
+      Implementamos nuevas librerías para intentar "reinventar la rueda"
+    </li>
+    <li className="h3">
+      Supervisor con poco tiempo, pero con grandes soluciones
+    </li>
+  </Appear>
+</ul>
+
+---
+
+<SplitRight>
+
+<section>
+  <h2>
+    Basicamente, gran parte del tiempo, me la pasaba haciento *Rubber-duck
+    debugging.*
+  </h2>
+</section>
+
+![](/src/images/rubber-duck-debugging.jpg)
+<p className="h6 mt-4">_Imagen real de mi puesto en la oficina_ </p>
+
+</SplitRight>
+
+---
+
+<div>
+<h2>Empezando a darle forma</h2>
+
+<h4>Sobre Marzo, empezamos a ver que ya teníamos unas rutinas, y en este periodo de tiempo hicimos lo siguiente</h4>
+
+<ul className="mt-4 py-4">
+  <Appear>
+    <li className="h3">Trabajamos en la asincronía de las peticiones ajax.</li>
+    <li className="h3">
+      Por falta de documentación, tocó replicar la aplicación investigando
+    </li>
+    <li className="h3">
+      Empezamos a dar mayor importancia a los boards de Gitlab para la
+      asignación de tareas
+    </li>
+    <li className="h3">
+      Implementamos nuevas librerías para intentar "reinventar la rueda"
+    </li>
+    <li className="h3">
+      Supervisor con poco tiempo, pero con grandes soluciones
+    </li>
+    <li className="h3">
+      El cliente empezó a pedir nuevas cosas y comentar necesidades nuevas
+    </li>
+  </Appear>
+</ul>
+</div>
+
+---
+
+## Recta final: primeras alphas, bugs...
+
+<div>
+  <p className="h4">
+    En marzo, ya teníamos las deadlines bien ajustadas pero...
+  </p>
+  <Appear>
+    <ul className="mt-4 py-4">
+      <li className="h3">
+        Los cambios mencionados antes, implicaron cambiar y testear
+        minuciosamente la aplicación vieja.
+      </li>
+      <li className="h3">
+        {" "}
+        Esto conllevó dedicar tiempo hacer y revisar esto:
+        <ol>
+          <li className="h5">
+            Los requisitos y necesidades de la deadline, no eran claros, hubo
+            que hacer nuevas tareas.
+          </li>
+          <li className="h5">La documentación seguía siendo un problema.</li>
+          <li className="h5">
+            Por ello se tuvo que investigar la original para replicarla.
+          </li>
+          <li className="h5">
+            Descubrimos implementaciones necesarias que nunca habían sido
+            habladas.
+          </li>
+        </ol>
+      </li>
+      <li className="h3">
+        Empezamos a dar mayor importancia a los boards de Gitlab para la
+        asignación de tareas
+      </li>
+      <li className="h3">
+        Implementamos nuevas librerías para evitar "reinventar la rueda" y
+        perder más tiempo del necesario
+      </li>
+      <li className="h3">
+        Supervisor con poco tiempo, pero con grandes soluciones
+      </li>
+      <li className="h3">
+        El cliente empezó a pedir nuevas cosas y comentar necesidades nuevas
+      </li>
+    </ul>
+  </Appear>
+</div>
+
+---
+
+### Por estas razones, aún se sigue trabajando en el proyecto.
+
+---
+
+<h2>*Conclusión. Analisis de objetivos y resultados obtenidos.*</h2>
+
+---
+
+<p>En mi humilde opinión: Aún tengo mucho que aprender. </p>
+<p className="h2">He aprendido mucho y me he esforzado, en la oficina parecen estar contentos conmigo.</p>
+<p className="h2">Puede que al comienzo, no me vieran preparado, y es comprensible dadas las circunstancias.</p>
+
+<p className="h2 my-4">Pero apostaron por __mi__</p> 
+<p className="h2">Y desde que empecé el curso, no me ha gustado la idea de tirar la toalla.</p>
+
+---
+
+<p>Es cierto que todavía tengo mucho que aprender.</p>
+<p className="h2">Pero en estos meses he trabajado duro. Y se han dado cuenta de ello.</p>
+<p className="h2">Puede que sea por eso por lo que me haya visto recompensado.</p> 
+<p className="h2"> Ya sea con una modesta subida de suelo o con un contrato que me permita seguir trabajando.</p>
+<p className="h2">Y con esto concluyo en que pienso que más que haber obtenido, para seguir trabajando como programador, he adquirido el objetivo de seguir aprendiendo. </p>

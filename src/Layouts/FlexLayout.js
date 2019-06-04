@@ -1,10 +1,11 @@
 // example Layout.js
-import React from "react";
+import React  from "react";
 
 export default ({ children, column }) => {
   console.log(column);
   return (
-    <main
+    <main 
+      className="container"
       style={{
         width: "90vw",
         height: "90vh",
